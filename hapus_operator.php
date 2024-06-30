@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["kode"])) {
     $sql = "DELETE FROM tb_operator WHERE kode_opr = '$kode_opr'";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: browseopr.php"); // Redirect kembali ke halaman browseproduk.php setelah berhasil menghapus
+        header("Location: browseopr.php"); // Redirect kembali ke halaman browse_operator.php setelah berhasil menghapus
         exit;
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

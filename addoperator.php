@@ -29,7 +29,11 @@
                 </div>
                 <div class="form_group my-3">
                     <label for="jenis_kelamin">Jenis Kelamin:</label>
-                    <input type="text" class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
+                    <select class="form-control" name="jenis_kelamin" id="jenis_kelamin">
+                        <option value="">- Pilih Jenis Kelamin -</option>
+                        <option value="Perempuan">Perempuan</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                    </select>
                 </div>
                 <div class="form_group my-3">
                     <label for="tgl_masuk">Tanggal Masuk:</label>

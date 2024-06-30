@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mycss/bootstrap/bootstrap.min.css">
-    <script src="mycss/jquery_min/jquery.min.js"></script>
-    <script src="mycss/popper_min/popper.min.js"></script>
-    <script src="mycss/bootstrap_min/bootstrap.min.js"></script>
-    <title>Browse Data Barang</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mycss/bootstrap/bootstrap.min.css">
+        <script src="mycss/jquery_min/jquery.min.js"></script>
+        <script src="mycss/popper_min/popper.min.js"></script>
+        <script src="mycss/bootstrap_min/bootstrap.min.js"></script>
+        <title>Browse Operator</title>
+        <style>
         body {
             display: flex;
             min-height: 100vh;
@@ -35,28 +35,28 @@
             padding: 20px;
             text-align: center;
         }
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
-    <div class="container mt-5">
-        <main>
-            <h2 class="pb-4">Browse Data Operator</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Kode Operator</th>
-                        <th>Nama Operator</th>
-                        <th>Tanggal Lahir</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Tanggal Masuk</th>
-                        <th>Shift</th>
-                        <th>Wajah Operator</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
+    <body>
+        <div class="container mt-5">
+            <main>
+                <h2 class="pb-4">Browse Data Operator</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Kode Operator</th>
+                            <th>Nama Operator</th>
+                            <th>Tanggal Lahir</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Tanggal Masuk</th>
+                            <th>Shift</th>
+                            <th>Wajah Operator</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
                     // Koneksi ke database
                     require_once("koneksi.php");
 
@@ -89,13 +89,13 @@
                     // Tutup koneksi ke database
                     $conn->close();
                     ?>
-                </tbody>
-            </table>
-            
-            <a href="addoperator.php" class="btn btn-primary">Tambah Operator</a>
-            <a href="index.php" class="btn btn-secondary">Back to Index</a>
-        </main>
-    </div>
-</body>
+                    </tbody>
+                </table>
+
+                <a href="addoperator.php" class="btn btn-primary">Tambah Operator</a>
+                <a href="index.php" class="btn btn-secondary">Back to Index</a>
+            </main>
+        </div>
+    </body>
 
 </html>
