@@ -119,6 +119,7 @@
                             <a class="dropdown-item" id="addOperatorBtn" href="addoperator.php">Tambah Operator</a>
                             <a class="dropdown-item" id="browseOperatorBtn" href="browseopr.php">Browse Operator</a>
                             <a class="dropdown-item" id="addSupplierBtn" href="addsupplier.php">Tambah Supplier</a>
+                            <a class="dropdown-item" id="addSupplierBtn" href="browse_supplier.php">Browse Supplier</a>
                         </div>
                     </li>
                     <li class="nav-item">

@@ -8,40 +8,32 @@
         <script src="mycss/jquery_min/jquery.min.js"></script>
         <script src="mycss/popper_min/popper.min.js"></script>
         <script src="mycss/bootstrap_min/bootstrap.min.js"></script>
-        <title>Input Operator</title>
+        <title>Input Supplier</title>
     </head>
 
     <body>
         <div class="container p-5">
-            <h2>Input Operator</h2>
-            <form action="proses_add_operator.php" method="POST" enctype="multipart/form-data">
+            <h2>Input Supplier</h2>
+            <form action="proses_add_supplier.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group my-3">
-                    <label for="kode_opr">Kode Operator:</label>
-                    <input type="text" class="form-control" id="kode_opr" name="kode_opr" required>
-                </div>
-                <div class="form-group my-3">
-                    <label for="nama_opr">Nama Operator:</label>
-                    <input type="text" class="form-control" id="nama_opr" name="nama_opr" required>
+                    <label for="kode_spl">Kode Supplier:</label>
+                    <input type="text" class="form-control" id="kode_spl" name="kode_spl" required>
                 </div>
                 <div class="form-group my-3">
-                    <label for="tgl_lahir">Tanggal Lahir:</label>
-                    <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" required>
+                    <label for="nama_spl">Nama Supplier:</label>
+                    <input type="text" class="form-control" id="nama_spl" name="nama_spl" required>
+                </div>
+                <div class="form-group my-3">
+                    <label for="nama_perush">Nama Perusahaan:</label>
+                    <input type="text" class="form-control" id="nama_perush" name="nama_perush" required>
                 </div>
                 <div class="form_group my-3">
-                    <label for="jenis_kelamin">Jenis Kelamin:</label>
-                    <input type="text" class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
+                    <label for="alamat_perush">Alamat Perusahaan:</label>
+                    <input type="text" class="form-control" id="alamat_perush" name="alamat_perush" required>
                 </div>
                 <div class="form_group my-3">
-                    <label for="tgl_masuk">Tanggal Masuk:</label>
-                    <input type="date" class="form-control" id="tgl_masuk" name="tgl_masuk" required>
-                </div>
-                <div class="form_group my-3">
-                    <label for="shfft">Shift:</label>
-                    <input type="text" class="form-control" id="shift" name="shift" required>
-                </div>
-                <div class="form_group my-3">
-                    <label for="gambar">Wajah Operator:</label>
-                    <input type="file" class="form-control-file" id="gambar" name="gambar" required>
+                    <label for="pic">Gambar Perusahaan:</label>
+                    <input type="file" class="form-control-file" id="pic" name="pic" required>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Simpan</button>
             </form>
